@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjercicioEnClaseLayouts.PaginaFlex"
+             Title="PaginaFlex">
+
+    <FlexLayout Direction="Column"
+                AlignItems="Center"
+                FlowDirection="LeftToRight"
+                JustifyContent="SpaceEvenly">
+                
+
+        <Label Text="Holaaa Bienvenido a la pagina de Flex Layout" FontSize="Large" TextColor="DarkOliveGreen"/>
+        <Label Text="Mi nombre es Eduardo Salazar" TextColor="White"/>
+        <Image WidthRequest="100" HeightRequest="100" Source="https://imageio.forbes.com/specials-images/imageserve/5ef0dbde6a7deb00066b45bc/0x0.jpg?format=jpg" />
+        <BoxView
+            Color="Aqua"
+            HeightRequest="100"
+            WidthRequest="100"/>
+        <Button 
+            WidthRequest="250"
+            HeightRequest="50"
+            x:Name="Boton1"
+            Text="Ir a Main Page"
+            Clicked="Boton1_Clicked"/>
+        <Button 
+            WidthRequest="250"
+            HeightRequest="50"
+            x:Name="Boton2"
+            Text="Ir a Stack Page"
+            Clicked="Boton2_Clicked"/>
+        <Button 
+            WidthRequest="250"
+            HeightRequest="50"
+            x:Name="Boton3"
+            Text="Ir a Grid Page"
+            Clicked="Boton3_Clicked"/>
+        <Button 
+            WidthRequest="250"
+            HeightRequest="50"
+            x:Name="Boton4"
+            Text="Ir a Absolute Page"
+            Clicked="Boton1_Clicked"/>
+
+        <HorizontalStackLayout>
+            <ImageButton HeightRequest="100" WidthRequest="100" Source="https://i.pinimg.com/236x/05/49/86/05498664d54894f92c6523c50c1eb9e6.jpg"/>
+            <Label Text="Hola Mundo Mi primera Pagina" TextColor="BlueViolet" VerticalTextAlignment="Center"/>
+            <ImageButton HeightRequest="100" WidthRequest="100" Source="https://i.eldiario.com.ec/fotos-manabi-ecuador/2014/11/20141102040000_a-3-garrotazosa-en-un-mona-logo_tn0.jpg"/>
+            <Label Text="Esta imagen describe a un personaje de internet" TextColor="Gold" VerticalTextAlignment="Center"/>
+        </HorizontalStackLayout>
+            
+    </FlexLayout>
+    
+</ContentPage>

@@ -24,6 +24,18 @@
         {
             Navigation.PushAsync(new PaginaGrid());
         }
+        private void Boton2_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PaginaAbsolute ());
+        }
+        private void Boton3_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PaginaFlex());
+        }
+        private void Boton4_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PaginaStack());
+        }
     }
     
 

@@ -35,6 +35,21 @@
                 x:Name ="Boton1"
                 Text= "Ir a Grid Layout"
                 Clicked= "Boton1_Clicked"/>
+            <Button
+                x:Name ="Boton2"
+                Text= "Ir a Absolute Layout"
+                Clicked= "Boton2_Clicked"/>
+            <Button
+                x:Name ="Boton3"
+                Text= "Ir a Flex Layout"
+                Clicked= "Boton3_Clicked"/>
+            <Button
+                x:Name ="Boton4"
+                Text= "Ir a Stack Layout"
+                Clicked= "Boton4_Clicked"/>
+
+
+
 
 
         </VerticalStackLayout>
