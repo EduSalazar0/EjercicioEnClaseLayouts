@@ -3,7 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EjercicioEnClaseLayouts.PaginaAbsolute"
              Title="PaginaAbsolute">
-    <VerticalStackLayout>
-        
-    </VerticalStackLayout>
+    <ScrollView>
+    <AbsoluteLayout>
+        <BoxView Color="Aqua"
+                 AbsoluteLayout.LayoutBounds="0.5,0,100,25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <BoxView Color="Violet"
+                 AbsoluteLayout.LayoutBounds="0,0.5,25,100"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <BoxView Color="Salmon"
+                 AbsoluteLayout.LayoutBounds="1,0.5,25,100"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <BoxView Color="Brown"
+                 AbsoluteLayout.LayoutBounds="0.5,1,100,25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <Label Text="Hola Mundo:))"
+               AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <Button 
+            WidthRequest="250"
+            HeightRequest="50"
+            VerticalOptions="Center"
+            x:Name="Boton1"
+            Text="Ir a Flex Page"
+            Clicked="Boton1_Clicked"/>
+    </AbsoluteLayout>
+    </ScrollView>
 </ContentPage>
