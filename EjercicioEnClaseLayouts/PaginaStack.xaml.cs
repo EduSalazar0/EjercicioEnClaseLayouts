@@ -6,4 +6,8 @@ public partial class PaginaStack : ContentPage
 	{
 		InitializeComponent();
 	}
+	private void Boton1_Clicked(object sender, EventArgs e)
+	{
+		Navigation.PushAsync(new PaginaAbsolute());
+	}
 }

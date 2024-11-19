@@ -6,12 +6,14 @@ public partial class PaginaGrid : ContentPage
 	{
 		InitializeComponent();
 	}
-	private void Boton2_Clicked(object sender, EventArgs e)
+	private void Boton1_Clicked(object sender, EventArgs e)
 	{
-		Navigation.PushAsync(new MainPage());
+		Navigation.PushAsync(new PaginaStack());
 
-		Navigation.PopAsync(); // Cierra la pantalla
+		//Navigation.PopAsync(); // Cierra la pantalla
 
-		Navigation.PopToRootAsync(); // Te lleva a la pantalla principal
+		//Navigation.PopToRootAsync(); // Te lleva a la pantalla principal
 	}
+
+
 }

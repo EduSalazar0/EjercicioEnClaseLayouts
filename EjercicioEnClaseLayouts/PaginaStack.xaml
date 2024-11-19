@@ -3,10 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EjercicioEnClaseLayouts.PaginaStack"
              Title="PaginaStack">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Margin="20"
+                         Spacing="6">
+        <Label Text="Primera Parte"/>
+               
+        <BoxView Color="Red"
+                 HeightRequest="40"/>
+        <BoxView Color="Yellow"
+                 HeightRequest="40"/>
+        <BoxView Color="Blue"
+                 HeightRequest="40"/>
+        <Label Text="Segunda Parte"
+               HorizontalOptions="CenterAndExpand"/>
+        <Image HeightRequest="150" WidthRequest="500" Source="https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg" />
+        <Image HeightRequest="150" WidthRequest="500" Source="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ES-ES-CAR-2048x2048.width-500.format-webp.webp" />
+        <Image HeightRequest="150" WidthRequest="500" Source="https://marketing4ecommerce.net/wp-content/uploads/2024/02/ias-generadoras-de-imagenes.jpg" />
+
+        <Button 
+            WidthRequest="250"
+            HeightRequest="50"
+            x:Name="Boton1"
+            Text="Ir a Absolute Page"
+            Clicked="Boton1_Clicked"/>
+
+
     </VerticalStackLayout>
 </ContentPage>
